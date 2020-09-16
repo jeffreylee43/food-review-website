@@ -1,0 +1,318 @@
+/* I pledge my honor that I have abided by the Stevens Honor System. 
+
+Joseph Bertone
+Kishan Patel
+Jeffrey Lee
+Chris Moon
+Jared Weinblatt
+
+*/
+.icon {
+    width: 1%;
+    height: 1%;
+}
+
+button {
+    background-color: rgb(219, 25, 51); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.rev {
+    text-align: center;
+}
+header {
+    padding-top: 1px;
+    background-color: black;
+    display: block;
+    text-align: left;
+    
+}
+
+header h1{
+    margin-left: 10px;
+    color: white;
+}
+
+header nav ul {
+    background-color: #a32638;
+    color: lightblue;
+}
+
+
+body {
+    background-color: lightgray;
+}
+div.Info{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+
+
+div.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 30px 10px 30px 10px;
+    margin: 30px 10px 30px 10px;
+
+}
+
+div.categories{
+    background-color: #F0F0F0;
+    padding: 30px 10px 30px 10px;
+    margin: 30px 10px 30px 10px;
+}
+
+
+
+figure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 30px 10px 30px 10px;
+    margin: 30px 10px 30px 10px;
+
+}
+nav ul li {
+    list-style: none;
+    display: inline;
+    flex-direction: column;
+}
+p {
+    text-align: center;
+}
+
+p.type {
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+div.flex{
+    display: flex;
+    justify-content: center;
+}
+
+div.item {
+    padding: 0px 40px 0px 40px;
+    display: block;
+    width: 200px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
+
+#wash{
+    height: 300px;
+    width: auto;
+}
+
+
+.caption{
+    display: block;
+
+}
+.pic {
+    display: flex;
+    text-align: center;
+
+}
+
+a  {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/*Navigation Bar */
+nav {
+    background-color: #a32638;
+    overflow: hidden;
+}
+nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+.active {
+    background-color: dimgray;
+    color: white;
+}
+nav .icon {
+    display: none;
+}
+nav a:hover{
+    background-color: #555;
+    color: white;
+}
+
+
+
+@media screen and (min-width: 999px){
+    .caption{
+        font-size: 23px;
+    }
+
+    div.item {
+        padding: 40px 80px 0px 80px;
+        display: block;
+        width: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 998px) and (min-width: 400px){
+    .nav a:not(:first-child) {
+        display: none;
+    }
+
+    .nav a.icon {
+        display: unset;
+        float: right;
+        display: block;
+    }
+
+    .nav.responsive {
+        position: relative;
+    }
+
+    .nav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+    }
+
+    .nav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+    }
+
+    .nav.responsive {
+            display: block;
+            width: 100%;
+            text-align: left;
+    }
+
+/* Navigation Bar */
+
+    p.type {
+        font-weight: bold;
+        padding-bottom: 40px;
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    header h1{        
+        text-align: center;
+    }
+
+    figure{
+        background-color: #F0F0F0;
+        padding: 30px 10px 30px 10px;
+        margin: 30px 10px 30px 10px;
+    }
+
+    .info{
+        background-color: #F0F0F0;
+        padding: 30px 10px 30px 10px;
+        margin: 30px 10px 30px 10px;
+    }
+
+    .categories{
+        background-color: #F0F0F0;
+        padding: 30px 10px 30px 10px;
+        margin: 30px 10px 30px 10px;
+    }
+
+
+    img {
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+    }
+
+    div.item {
+        padding: 40px 50px 0px 50px;
+        display: block;
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 399px){
+    
+    .nav a:not(:first-child) {
+        display: none;
+    }
+
+    .nav a.icon {
+        display: unset;
+        float: right;
+        display: block;
+    }
+
+    .nav.responsive {
+        position: relative;
+    }
+
+    .nav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+    }
+
+    .nav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+    }
+
+    .nav.responsive {
+            display: block;
+            width: 100%;
+            text-align: left;
+    }
+
+/* Navigation Bar */
+
+    div.item {
+    padding: 0px 15px 0px 15px;
+    display: block;
+    width: 150px;
+    }
+
+    img {
+    width: auto;
+    height: auto;
+    background-color: grey;
+    }
+
+}
+
+
+

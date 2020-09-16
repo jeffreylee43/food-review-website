@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Twelve Reviews</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="review_submit.js"></script>
+    <script src="myscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style_reviews.css">
+</head>
+    
+<body>
+    <header>
+            <h1>Twelve Reviews</h1>
+            <nav class="nav" id="myNav">
+                <a href="index.html">Home</a>
+                <a href="Italian/italian.html">Italian</a>
+                <a href="Asian/asian.html">Asian</a>
+                <a href="Mexican/mexican.html">Mexican</a>
+                <a href="America/american.html">American</a>
+                <a href="usersubmittedreviews.html" class="active">User Submitted Reviews</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </nav>
+    </header>
+    <h3>Submit a review here!</h3>
+    <form class="postForm" id="formPost">
+            <p class="rev">Email:</p>
+            <input type="email" id="email" required><br>
+
+            <p class="rev">Restaurant Name:</p>
+            <input type="text" name="restaurant" id="restaurant" required><br>
+        
+            <p class="rev">Type review here:</p>
+            <textarea rows="4" cols="50" name="comment" class="comment" id="comment" form="usrform" maxlength="300" placeholder="Enter text here..."></textarea>
+        
+            <br><p class="rev">Service Quality (between 1 and 5):</p>
+            <input type="number" name="service_qual" id="service_qual" min="1" max="5" value="3" step="0.5" required>
+            
+        
+            <br><p class="rev">Menu Variety (between 1 and 5):</p>
+            <input type="number" name="menu_variety" id="menu_variety" min="1" value="3" max="5" step="0.5" required>
+            
+        
+            <br><p class="rev">Quality of Food (between 1 and 5):</p>
+            <input type="number" name="food_qual"  id="food_qual" min="1" value="3" max="5" step="0.5" required>
+            
+                
+            <br><p class="rev">Insert image url to be displayed on review: </p>
+            <input type="url" id="image" required>
+            
+            <br><p class="rev">I was not paid to write this review.<input type="checkbox" required></p>
+            
+            <br>
+            <input type="submit" value="Submit Review">
+        </form>
+        
+        
+        <div id="reviews">
+        
+        </div>
+
+</body>
+</html>

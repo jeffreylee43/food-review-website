@@ -1,0 +1,236 @@
+/* I pledge my honor that I have abided by the Stevens Honor System. 
+
+Joseph Bertone
+Kishan Patel
+Jeffrey Lee
+Chris Moon
+Jared Weinblatt
+
+*/
+
+header {
+    padding-top: 1px;
+    background-color: black;
+    display: block;
+    text-align: left;
+}
+
+    header h1 {
+        margin-left: 10px;
+        color: white;
+    }
+
+    header nav ul {
+        background-color: #a32638;
+        color: lightblue;
+    }
+
+
+body {
+    background-color: lightgrey;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Reviews */
+
+.reviews {
+    display: flex;
+    justify-content: center;
+}
+
+.review-body {
+    height: 200px;
+}
+
+.main-container {
+    margin: 50px 0px 50px 0px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    height: 200px;
+    background-color: lightgrey;
+    
+}
+
+.review-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.review-container, .rating-container, .pic-container {
+    border: 1px solid black;
+    width: 90%;
+    height: 100%;
+    padding: 5px 0px 5px 0px;
+    background-color: white;
+}
+
+.review-body{
+    padding: 0px 10px;
+}
+
+.rating-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    list-style: square;
+}
+
+/*Navigation Bar */
+nav {
+    background-color: #a32638;
+    overflow: hidden;
+}
+nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+.active {
+    background-color: dimgray;
+    color: white;
+}
+nav .icon {
+    display: none;
+}
+nav a:hover{
+    background-color: #555;
+    color: white;
+}
+
+
+@media screen and (min-width: 1100px) {
+
+    .review-container {
+        border-right: none;
+        border-left: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+
+    .nav a.icon {
+        display: unset;
+        float: right;
+        display: block;
+    }
+
+    .nav.responsive {
+        position: relative;
+    }
+
+        .nav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .nav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .nav.responsive {
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+
+    .main-container {
+        margin: 50px 0px 300px 0px;
+        padding: 10px 10px 10px 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+     .main-container #mc1 {
+        margin-top: 100px;
+    }
+
+    .pic-container {
+        width: 40%;
+        float: left;
+        border-bottom: none;
+    }
+
+    .rating-container {
+        float: left;
+        width: 40%;
+        border-left: none;
+        border-bottom: none;
+        height: inherit;
+    }
+
+    .review-container {
+        float: left;
+        clear: left;
+        width: 80.2%;
+        order: 1;
+    }
+   
+}
+
+input[type=text] {
+    width: 25%;
+}
+
+input[type=email] {
+    width: 25%;
+}
+@media only screen and (max-width: 998px) and (min-width: 400px) {
+    h3 {
+        font-size: xx-large;
+    }
+    input {
+        zoom: 400%;
+        width: 75%;
+    }
+
+    input[type=email] {
+        width: 75%;
+    }
+
+    input[type=text] {
+        width: 75%;
+    }
+    .rev {
+        font-size: xx-large;
+    }
+
+    textarea {
+        zoom: 150%;
+        width: 75%;
+        height: 75%;
+    }
+
+    .review {
+        zoom: 150%;
+    }
+
+    .nav {
+        zoom: 150%;
+    }
+}
+
+
